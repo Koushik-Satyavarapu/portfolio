@@ -6,7 +6,7 @@ export default function SocialBar() {
   return (
     <div className="social-bar">
       <a href="https://github.com/Koushik-Satyavarapu" target="_blank" rel="noopener noreferrer"><Github /></a>
-      <a href="https://linkedin.com/in/koushik-satyavarapu" target="_blank" rel="noopener noreferrer"><Linkedin /></a>
+      <a href="https://www.linkedin.com/in/koushik-satyavarapu-1063332a6/" target="_blank" rel="noopener noreferrer"><Linkedin /></a>
       <a href="https://leetcode.com/u/koushikSatyavarapu/" target="_blank" rel="noopener noreferrer"><Leetcode /></a>
     </div>
   );
