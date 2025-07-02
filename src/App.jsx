@@ -9,22 +9,21 @@ import Experience from './sections/Experience'
 import Education from './sections/Education'
 import Projects from './sections/Projects'
 import Contact from './sections/Contact'
-import Reviews from './sections/Reviews'
-
+import SocialBar from './components/SocialBar'
 function App() {
-
   return (
     <>
+      <SocialBar />
       <Home />
       <About />
       <Skills />
       <Experience />
-      <Reviews />
       <Education />
       <Projects />
       <Contact />
       <Dock />
       <Tooltip />
+      
     </>
   );
 }

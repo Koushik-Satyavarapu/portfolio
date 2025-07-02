@@ -1,46 +1,45 @@
-import SkillCard from '../components/SkillCard'
+import '../styles/skills.css'; // ✅ Add this line here
 
 export default function Skills() {
+    const skills = [
+        { name: 'HTML', icon: 'devicon-html5-plain-wordmark' },
+        { name: 'CSS', icon: 'devicon-css3-plain-wordmark' },
+        { name: 'JavaScript', icon: 'devicon-javascript-plain' },
+        { name: 'React', icon: 'devicon-react-original-wordmark' },
+        { name: 'Node.js', icon: 'devicon-nodejs-plain-wordmark' },
+        { name: 'Express', icon: 'devicon-express-original-wordmark' },
+        { name: 'MongoDB', icon: 'devicon-mongodb-plain-wordmark' },
+        { name: 'Python', icon: 'devicon-python-plain-wordmark' },
+        { name: 'Java', icon: 'devicon-java-plain-wordmark' },
+        { name: 'C++', icon: 'devicon-cplusplus-plain' },
+        { name: 'C', icon: 'devicon-c-plain' },
+        { name: 'Git', icon: 'devicon-git-plain-wordmark' },
+        { name: 'GitHub', icon: 'devicon-github-original-wordmark' },
+        { name: 'VS Code', icon: 'devicon-vscode-plain' }
+        // { name: 'Postman', icon: 'devicon-postman-plain' },
+        // { name: 'Heroku', icon: 'devicon-heroku-original-wordmark' },
+        // { name: 'Netlify', icon: 'devicon-netlify-plain-wordmark' },
+        // { name: 'Vercel', icon: 'devicon-vercel-plain' },
+        // { name: 'Figma', icon: 'devicon-figma-plain' },
+        // { name: 'Selenium', icon: 'devicon-selenium-original' },
+        // { name: 'Puppeteer', icon: 'devicon-puppeteer-plain' },
+        // { name: 'OpenAI', icon: 'devicon-openai-plain' },
+        // { name: 'Gemini', icon: 'devicon-google-original' },
+        // { name: 'Hugging Face', icon: 'devicon-huggingface-plain' },
+    ];
 
     return (
-        <div className='skills-section section'>
-            <h2>Skills</h2>
-            <SkillCard heading='Frontend' skills={[
-                { 'name': 'HTML', 'icon': 'html5' },
-                { 'name': 'CSS', 'icon': 'css3' },
-                { 'name': 'JavaScript', 'icon': 'javascript' },
-                { 'name': 'React', 'icon': 'react' },
-                { 'name': 'Bootstrap', 'icon': 'bootstrap' },
-                { 'name': 'Tailwind CSS', 'icon': 'tailwindcss' },
-                { 'name': 'Material-UI', 'icon': 'materialui' },
-            ]} />
-            <SkillCard heading='Backend' hcolor="var(--clr-accent2)" skills={[
-                { 'name': 'Node.js', 'icon': 'nodejs' },
-                { 'name': 'Express', 'icon': 'express' },
-                { 'name': 'Python', 'icon': 'python' },
-                { 'name': 'Flask', 'icon': 'flask' },
-                { 'name': 'MongoDB', 'icon': 'mongodb' },
-            ]} />
-            <SkillCard heading='Tools' hcolor="var(--clr-accent3)" skills={[
-                { 'name': 'Git', 'icon': 'git' },
-                { 'name': 'GitHub', 'icon': 'github' },
-                { 'name': 'VS Code', 'icon': 'vscode' },
-                { 'name': 'Postman', 'icon': 'postman' },
-                { 'name': 'Heroku', 'icon': 'heroku' },
-                { 'name': 'Netlify', 'icon': 'netlify' },
-                { 'name': 'Vercel', 'icon': 'vercel' },
-                { 'name': 'Figma', 'icon': 'figma' },
-            ]} />
-            <SkillCard heading='Automation' hcolor="var(--clr-sec)" skills={[
-                { 'name': 'Selenium', 'icon': 'selenium' },
-                { 'name': 'Puppeteer', 'icon': 'puppeteer' },
-                { 'name': 'OpenAI', 'icon': 'https://simpleicons.org/icons/openai.svg' },
-                { 'name': 'Web Scraping', 'icon': '' },
-                { 'name': 'DeepSeek', 'icon': '' },
-                { 'name': 'Gemini', 'icon': 'https://simpleicons.org/icons/googlegemini.svg' },
-                { 'name': 'Hugginface', 'icon': 'https://simpleicons.org/icons/huggingface.svg' },
-            ]} />
+    <div id="skills" className='skills-section fade-in'>
+      <h2 className="skills-heading">SKILLS</h2>
+      <div className='skills-grid'>
+        {skills.map((skill, index) => (
+  <div key={index} className='skill-item' style={{ "--i": index }}>
+    <i className={`${skill.icon} skill-icon`}></i>
+    <span className='skill-name'>{skill.name}</span>
+  </div>
+))}
 
-        </div>
-    )
+      </div>
+    </div>
+  );
 }

@@ -6,8 +6,9 @@ import { loadSlim } from "@tsparticles/slim";
 import { particleNasaTheme } from '../utils/utils'
 import Sparkles from '../components/Sparkles'
 import '../styles/home.css'
-import Quby from '../assets/quby.png'
+import Quby from '../assets/koushik.png'
 import SpaceBg from '../components/SpaceBg';
+import { Typewriter } from 'react-simple-typewriter';
 
 
 
@@ -25,24 +26,45 @@ export default function Home() {
 
     return (
         <>
-            <div className="hero-container">
+            <div id="home" className="hero-container">
                 <div className='hero-1'>
                     <IconCloud />
                 </div>
                 <div className='hero-2'>
                     <div>
                         <div>
-                            <div className='malay-img-cont'>
-                                <img src={Quby} alt="Malay" className='malay-img' />
+                            <div className='koushik-img-cont'>
+                                <img src={Quby} alt="Koushik" className='koushik-img' />
                             </div>
-                            <div>Hi, I'm Malay<span className="wave">👋</span></div>
+                            <div className="intro-text">Hi, I'm </div>
                         </div>
                         <div>
                             <Sparkles scale={1.5} color="#ff0">
-                                <h1><span className='outlined-txt'>FULLSTACK</span></h1>
-                                <h1><span className='shine-txt'>DEVELOPER</span> &</h1>
-                                <h1><span className='highlight-txt'>API</span> EXPERT</h1>
+                                <h1><span className='shine-txt'>KOUSHIK</span> </h1>
+                                <h1><span className='highlight-txt'>SATYAVARPU</span> <span className="wave">👋</span> </h1>
                             </Sparkles>
+                            <div className="typing-text">
+                                <span
+                                    style={{
+                                    color: theme === "dark" ? "#ffffff" : "#000000",
+                                    transition: "color 0.3s ease",
+                                    }}
+                                >
+                                    <Typewriter
+                                    words={[
+                                        'Creative Frontend Developer',
+                                        'Passionate AI/ML Enthusiast',
+                                        'Logical Problem Solver (DSA-Focused)'
+                                    ]}
+                                    loop={true}
+                                    cursor
+                                    cursorStyle="|"
+                                    typeSpeed={80}
+                                    deleteSpeed={40}
+                                    delaySpeed={1500}
+                                    />
+                                </span>
+                            </div>
                         </div>
                     </div>
                 </div>

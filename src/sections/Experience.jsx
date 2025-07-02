@@ -4,53 +4,72 @@ import '../styles/experience.css';
 import Timeline from '../components/Timeline';
 import TimelineItem from '../components/TimelineItem';
 import { TimeStamp } from '../components/TimelineItem';
-import Upwork from '../assets/icons/upwork.svg?react';
-import Fiverr from '../assets/icons/fiverr.svg?react';
+import Mirai from '../assets/icons/mirai.svg?react';
+import Aws from '../assets/icons/aws.svg?react';
+import Gdgwow from '../assets/icons/gdgwow.svg?react';
+import Dimohack from '../assets/icons/dimohack.svg?react';
+import Sushack from '../assets/icons/sushacks.svg?react';
 import Github from '../assets/icons/github.svg?react';
 import Vinoai from '../assets/vinoai.avif'
 
 export default function Experience() {
     return (
-        <div className='experience-section section' style={{ paddingBottom: '0' }}>
-            <h2>Work Experience</h2>
+    <div id="experience" className='about-section fade-in'>
+      <h2 className="about-heading">Experience</h2>
             <div className='experience'>
                 <div className="illustration">
                     <Freelancing />
                 </div>
                 <div className='details'>
-                    <h3>Freelancing</h3>
-                    <p>As a freelancer, I have worked on a variety of projects, including web development, mobile app development, and graphic design. I have experience working with clients from different parts of the world, and I have developed a strong understanding of the importance of communication and collaboration in remote work environments.</p>
+                    <h3>Internship</h3>
+                    <p>As a student, I’m passionate about Artificial Intelligence and Machine Learning, and I’m currently doing an internship to deepen my skills in this field. I’m also highly interested in web development and enjoy building clean, user-friendly interfaces. I’m always eager to learn new technologies and explore how code can be used to solve real-world problems.</p>
                     <Timeline>
-                        <TimelineItem icon={<Upwork />} color="#6fda44" to="https://www.upwork.com/freelancers/~013f6c37770776680c?mp_source=share">
-                            <h4>Web & Automation Expert, Upwork</h4>
-                            <TimeStamp stamp="2023 - now" />
-                            <p>Specialized in creating automated web solutions for clients. Carting modern web interface for tools for your simplicity.</p>
-                        </TimelineItem>
-                        <TimelineItem icon={<Fiverr />} color="#1dbf73" to="https://fiverr.com/malaypatra9418">
-                            <h4>Web Developer, Fiverr</h4>
-                            <TimeStamp stamp="2023 - now" />
-                            <p>Developing websites for clients using Reactjs, Expressjs, Mongodb, Nodejs (MERN).</p>
-                        </TimelineItem>
-                        <TimelineItem icon={<img src={Vinoai} />} color="#d4a7b4" bgColor="white" to="https://www.vino-app.com/">
-                            <h4>Automation Developer, Vino.ai</h4>
-                            <TimeStamp stamp="2023, Feb" />
-                            <p>Built an automated documentation generator for input git repo integrating Openai, GPT-4 model.</p>
+                        <TimelineItem icon={<Mirai />} color="#6fda44" to="https://msot.org/internship">
+                            <h4>AI Intern, Mirai Summer AI Internship 2025</h4>
+                            <TimeStamp stamp="June 2025 - Present" />
+                            <p>
+                                Exploring the fundamentals of Machine Learning and prompt engineering. Gaining hands-on experience with LLMs like ChatGPT and Gemini using tools such as Google Teachable Machine, PromptHer, and more.
+                            </p>
+                            </TimelineItem>
+
+                            <TimelineItem icon={<Aws />} color="#FF9900" to="https://aws.amazon.com/training/awsacademy/">
+                            <h4>Virtual Intern, AWS AI/ML Internship</h4>
+                            <TimeStamp stamp="April 2025 - June 2025" />
+                            <p>
+                                Completed a virtual internship focused on the basics of Artificial Intelligence and Machine Learning, understanding key concepts and tools in the AWS ecosystem.
+                            </p>
                         </TimelineItem>
                     </Timeline>
                 </div>
             </div>
             <div className='experience reverse'>
                 <div className='details'>
-                    <h3>Open Source Contribution</h3>
-                    <p>Actively contributed to open-source projects by developing new features, resolving issues, and enhancing documentation. Engaged with the community through code reviews and discussions to drive improvements.</p>
+                    <h3>Hackathon Participation</h3>
+                    <p>
+                        I have participated in a few college and community-level hackathons where I explored problem-solving, team collaboration, and creative thinking. These experiences helped me improve my technical skills, work with peers, and learn how to approach real-world challenges using technology.
+                    </p>
+
                     <Timeline>
-                        <TimelineItem icon={<Github />} color="#0745a3" to="https://github.com">
-                            <h4>Github</h4>
-                            <TimeStamp stamp="2022 - now" />
-                            <p>Maintained and contributed to repositories, collaborating on code, issues, and pull requests.</p>
+                        <TimelineItem icon={<Sushack />} color="#ff6b6b" to="https://2024.sushacks.com/">
+                        <h4>SUS Hacks – Vignan’s Institute of Information Technology</h4>
+                        <TimeStamp stamp="2024" />
+                        <p>Secured 6th position by showcasing innovative problem-solving skills at this competitive hackathon.</p>
+                        </TimelineItem>
+
+                        <TimelineItem icon={<Gdgwow />} color="#1b73e8" to="https://wow.vizag.dev/">
+                        <h4>GDSC WOW 24 – GITAM University, Vizag</h4>
+                        <TimeStamp stamp="2024" />
+                        <p>Participated in a collaborative hackathon focused on innovation and technical creativity.</p>
+                        </TimelineItem>
+
+                        <TimelineItem icon={<Dimohack />} color="#7e3af2" to="https://dimohackvitap.devfolio.co/">
+                        <h4>DimoHack – VIT AP</h4>
+                        <TimeStamp stamp="2024" />
+                        <p>Competed in an online hackathon, contributing to impactful tech solutions and team-driven development.</p>
                         </TimelineItem>
                     </Timeline>
                 </div>
+
                 <div className="illustration">
                     <Opensource />
                 </div>

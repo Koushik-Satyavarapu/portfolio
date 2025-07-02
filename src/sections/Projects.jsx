@@ -3,79 +3,67 @@ import ProjectCard, { Holder, Content, Tags, Tag, CardActions } from '../compone
 
 export default function Projects() {
   return (
-    <div className='section projects-section'>
-      <h2>Projects</h2>
+    <div id="projects" className='project-section fade-in'>
+      <h2 className="project-heading">Projects</h2>
       <Holder>
+        {/* AgriConnect Project */}
         <ProjectCard>
-          <img src='upmagic.png' alt='Upmagic' />
+          <img src='agriconnect.png' alt='AgriConnect' />
           <Content>
-            <h3>Upmagic</h3>
-            <p>An AI-powered Upwork proposal generator that creates compelling proposals with just one click. Built using the secret strategies and proven techniques of top-rated freelancers to help you land more jobs and stand out from the competition.</p>
+            <h3>AgriConnect – Smart Agriculture Support App</h3>
+            <p>
+              Developed a feature-rich app to assist farmers with crop insights, weather updates, and expert connections.
+              Integrated real-time data like market price tracking and multilingual support. Designed a clean, responsive UI
+              to ensure ease of use, especially for users with limited tech experience. Focused on accessibility and rural
+              outreach through intuitive design and offline support possibilities.
+            </p>
             <Tags>
-              <Tag hashtag="React" />
-              <Tag hashtag="GenAI" />
-              <Tag hashtag="Nextjs" />
-              <Tag hashtag="Tailwind Css" />
+              <Tag hashtag="JavaScript" />
+              <Tag hashtag="API Integration" />
+              <Tag hashtag="ResponsiveUI" />
+              <Tag hashtag="Accessibility" />
             </Tags>
           </Content>
-          <CardActions visit="https://upmagic.vercel.app" source="https://github.com/malay77patra/upmagic" />
+          <CardActions visit="#" source="#" />
         </ProjectCard>
+
+        {/* Personal Portfolio Project */}
         <ProjectCard>
-          <img src='hotkeys.png' alt='HOTKEYS' />
+          <img src='portfolio.png' alt='Portfolio' />
           <Content>
-            <h3>HOTKEYS</h3>
-            <p>Learn the keys, kill the 🐀. Master keyboard shortcuts with ease. Discover, learn, and use hotkeys faster than ever. Boost your productivity - No more guessing - No more clicking - Just pure flow.</p>
+            <h3>Personal Portfolio Website</h3>
+            <p>
+              Built a modern, responsive personal portfolio using Vite React and Tailwind CSS. Showcases skills, projects,
+              and resume with smooth navigation and a clean layout. Included interactive UI elements and animations for better
+              user engagement. Optimized for performance across all devices.
+            </p>
             <Tags>
-              <Tag hashtag="Nextjs" />
-              <Tag hashtag="Reactjs" />
-              <Tag hashtag="shadcn/ui" />
-              <Tag hashtag="MagicUI" />
+              <Tag hashtag="Vite" />
+              <Tag hashtag="React" />
               <Tag hashtag="TailwindCSS" />
+              <Tag hashtag="ResponsiveDesign" />
             </Tags>
           </Content>
-          <CardActions visit="https://hotkeys-iota.vercel.app" source="https://github.com/malay77patra/hotkeys" />
+          <CardActions visit="#" source="#" />
         </ProjectCard>
+
+        {/* Basic NoteEase App */}
         <ProjectCard>
-          <img src='physoxy.png' alt='Physoxy' />
+          <img src='noteease.png' alt='NoteEase' />
           <Content>
-            <h3>Physoxy</h3>
-            <p>A full-stack, production-ready web app with secure JWT authentication, role-based access, and user subscriptions. Features a decoupled architecture, email verification, theme support, and admin tools—all and many more.</p>
+            <h3>NoteEase – Simple Note-Taking App</h3>
+            <p>
+              A lightweight, beginner-friendly note-taking app that allows users to create, edit, and delete notes in a
+              clutter-free interface. Focused on simplicity, performance, and clean design. Great for practicing basic
+              React concepts and state management.
+            </p>
             <Tags>
               <Tag hashtag="React" />
-              <Tag hashtag="Mongodb" />
-              <Tag hashtag="Express js" />
-              <Tag hashtag="Tailwind Css" />
-              <Tag hashtag="daisy UI" />
+              <Tag hashtag="JavaScript" />
+              <Tag hashtag="CSS" />
             </Tags>
           </Content>
-          <CardActions visit="https://physoxy.vercel.app" source="https://github.com/malay77patra/Physoxy" />
-        </ProjectCard>
-        <ProjectCard>
-          <img src='flamecoders.png' alt='Flamecoders' />
-          <Content>
-            <h3>Flamecoders</h3>
-            <p>A full-stack article platform with a rich markdown editor, theme support, and secure JWT-based auth. Designed with scalable, decoupled architecture and production-grade structure for seamless writing, deployment, and user experience.</p>
-            <Tags>
-              <Tag hashtag="React" />
-              <Tag hashtag="Mongodb" />
-              <Tag hashtag="Express js" />
-              <Tag hashtag="Tailwind Css" />
-              <Tag hashtag="daisy UI" />
-            </Tags>
-          </Content>
-          <CardActions visit="https://flamecoders.vercel.app/" source="https://github.com/malay77patra/flamecoders-frontend" />
-        </ProjectCard>
-        <ProjectCard>
-          <img src='malay-patrav1.png' alt='Portfolio v1' />
-          <Content>
-            <h3>Malay Patra, Portfolio v1</h3>
-            <p>This is the first version of my personal portfolio website. It showcases my skills, projects, and experiences as a web developer. The portfolio is designed to be visually appealing and easy to navigate, providing a detailed introduction about myself.</p>
-            <Tags>
-              <Tag hashtag="React" />
-              <Tag hashtag="React-Scroll" />
-            </Tags>
-          </Content>
-          <CardActions visit="https://malaypatra.vercel.app/" source="https://github.com/malay77patra/portfolio" />
+          <CardActions visit="#" source="#" />
         </ProjectCard>
       </Holder>
     </div>
