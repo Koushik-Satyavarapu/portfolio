@@ -1,4 +1,5 @@
-echo { "builds": [{ "src": "package.json", "use": "@vercel/vite" }], "framework": "vite" } > vercel.json
-git add vercel.json
-git commit -m "Add Vercel config for Vite"
-git push origin main
+{
+  "buildCommand": "vite build",
+  "outputDirectory": "dist",
+  "framework": "vite"
+}
