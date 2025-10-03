@@ -1,0 +1,79 @@
+.skills-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: center;
+  margin-top: 2rem;
+}
+
+.skill-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 80px;
+  position: relative;
+  animation: float 3s ease-in-out infinite;
+  animation-delay: calc(0.2s * var(--i)); /* each item floats differently */
+  transition: transform 0.3s ease;
+}
+
+.skill-icon {
+  font-size: 3rem;
+  transition: transform 0.3s ease;
+}
+
+/* On hover: grow and stop animation */
+.skill-item:hover {
+  animation-play-state: paused;
+  transform: scale(1.2);
+}
+
+.skill-name {
+  margin-top: 0.3rem;
+  font-size: 0.8rem;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+/* Show name on hover */
+.skill-item:hover .skill-name {
+  opacity: 1;
+}
+
+/* Smooth floating animation (up and down) */
+@keyframes float {
+  0% {
+    transform: translateY(0px);
+  }
+  25% {
+    transform: translateY(-4px);
+  }
+  50% {
+    transform: translateY(2px);
+  }
+  75% {
+    transform: translateY(-2px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+.skills-heading {
+  font-size: 2.2rem;
+  font-weight: 600;
+  color: var(--clr);
+  margin-bottom: 1.2rem;
+  text-transform: uppercase;
+  border-bottom: 2px solid var(--clr-accent);
+  display: inline-block;
+  padding-bottom: 0.25rem;
+}
+.skills-section {
+  padding: 2.5rem 2rem;
+  font-family: 'Poppins', sans-serif;
+  color: var(--clr-txt);
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+  animation: fadeInUp 1s ease forwards;
+}

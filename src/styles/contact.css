@@ -1,0 +1,21 @@
+
+.contact-section {
+  padding: 2.5rem 2rem;
+  font-family: 'Poppins', sans-serif;
+  color: var(--clr-txt);
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+  animation: fadeInUp 1s ease forwards;
+}
+
+.contact-heading {
+  font-size: 2.2rem;
+  font-weight: 600;
+  color: var(--clr);
+  margin-bottom: 1.2rem;
+  text-transform: uppercase;
+  border-bottom: 2px solid var(--clr-accent);
+  display: inline-block;
+  padding-bottom: 0.25rem;
+}

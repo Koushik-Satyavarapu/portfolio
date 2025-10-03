@@ -1,0 +1,83 @@
+.education {
+    display: flex;
+}
+
+.education>* {
+    flex: 1;
+}
+
+.education .illustration {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.education .illustration svg {
+    max-width: 300px;
+    height: auto;
+}
+
+@media (max-width: 768px) {
+    .education {
+        flex-direction: column;
+    }
+
+    .education .illustration svg {
+        margin: auto;
+        display: flex;
+        margin-bottom: 1rem;
+    }
+}
+
+.education-section {
+  padding: 2.5rem 2rem;
+  font-family: 'Poppins', sans-serif;
+  color: var(--clr-txt);
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+  animation: fadeInUp 1s ease forwards;
+}
+
+.education-heading {
+  font-size: 2.2rem;
+  font-weight: 600;
+  color: var(--clr);
+  margin-bottom: 1.2rem;
+  text-transform: uppercase;
+  border-bottom: 2px solid var(--clr-accent);
+  display: inline-block;
+  padding-bottom: 0.25rem;
+}
+/* Style for College Name */
+.college-name {
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-bottom: 0.4rem;
+}
+
+/* Branch Text Styling */
+.branch-name {
+  font-size: 0.95rem;
+  color: #bbbbbb;
+  margin-bottom: 0.8rem;
+}
+
+/* Smooth Fade-in Timeline */
+.fade-in-timeline {
+  opacity: 0;
+  transform: translateY(30px);
+  animation: fadeInTimeline 0.8s ease forwards;
+}
+
+@keyframes fadeInTimeline {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Optional: Space between timeline items (future-proofing) */
+.timeline-item:not(:last-child) {
+  margin-bottom: 1.5rem;
+}
