@@ -4,7 +4,7 @@ import '../styles/experience.css';
 import Timeline from '../components/Timeline';
 import TimelineItem from '../components/TimelineItem';
 import { TimeStamp } from '../components/TimelineItem';
-import Mirai from '../assets/icons/mirai.svg?react';
+import Infosys from '../assets/icons/infosys.svg?react';
 import Aws from '../assets/icons/aws.svg?react';
 import Gdgwow from '../assets/icons/gdgwow.svg?react';
 import Dimohack from '../assets/icons/dimohack.svg?react';
@@ -24,11 +24,11 @@ export default function Experience() {
                     <h3>Internship</h3>
                     <p>As a student, I’m passionate about Artificial Intelligence and Machine Learning, and I’m currently doing an internship to deepen my skills in this field. I’m also highly interested in web development and enjoy building clean, user-friendly interfaces. I’m always eager to learn new technologies and explore how code can be used to solve real-world problems.</p>
                     <Timeline>
-                        <TimelineItem icon={<Mirai />} color="#6fda44" to="https://msot.org/internship">
-                            <h4>AI Intern, Mirai Summer AI Internship 2025</h4>
-                            <TimeStamp stamp="June 2025 - Present" />
+                        <TimelineItem icon={<Infosys />} color="#007CC3" to="https://www.infosys.com/infosys-springboard.html">
+                            <h4>AI Intern, Infosys Springboard Virtual Internship 6.0</h4>
+                            <TimeStamp stamp="August 2025 - Present" />
                             <p>
-                                Exploring the fundamentals of Machine Learning and prompt engineering. Gaining hands-on experience with LLMs like ChatGPT and Gemini using tools such as Google Teachable Machine, PromptHer, and more.
+                                Working on “NewsPulse: Global News Trend Analyzer Using AI” project. Exploring AI tools and prompt engineering while gaining hands-on experience in applying machine learning for news trend analysis.
                             </p>
                             </TimelineItem>
 
