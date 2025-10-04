@@ -18,7 +18,7 @@ export default function About() {
       <p className="about-tagline">Let’s build something great! ✨</p>
 
       <div className="resume-button-wrapper">
-        <a href="https://drive.google.com/file/d/13nKUqM_yTtteSRscm9DhjnJPNiEJNW3d/view?usp=drive_link" target='_blank' rel="noopener noreferrer">
+        <a href="https://drive.google.com/file/d/13nKUqM_yTtteSRscm9Dhj" target='_blank' rel="noopener noreferrer">
           <Button1>
             <SvgIcon icon={Pdf} />
             Resume
