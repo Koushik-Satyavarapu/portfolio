@@ -24,7 +24,7 @@ export default function Experience() {
                     <h3>Internship</h3>
                     <p>As a student, I’m passionate about Artificial Intelligence and Machine Learning, and I’m currently doing an internship to deepen my skills in this field. I’m also highly interested in web development and enjoy building clean, user-friendly interfaces. I’m always eager to learn new technologies and explore how code can be used to solve real-world problems.</p>
                     <Timeline>
-                        <TimelineItem icon={<Infosys />} color="#007CC3" to="https://www.infosys.com/infosys-springboard.html">
+                        <TimelineItem icon={<Infosys />} color="#007CC3" to="https://infyspringboard.onwingspan.com/web/en/login#iss=https://infyspringboard.onwingspan.com/auth/realms/infyspringboard">
                             <h4>AI Intern, Infosys Springboard Virtual Internship 6.0</h4>
                             <TimeStamp stamp="August 2025 - Present" />
                             <p>

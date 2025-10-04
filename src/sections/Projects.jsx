@@ -29,7 +29,7 @@ export default function Projects() {
             </Tags>
           </Content>
           <CardActions
-            visit=""
+            visit="https://koushiksatyavarapu.vercel.app/"
             source="https://github.com/Koushik-Satyavarapu/portfolio.git"
           />
         </ProjectCard>

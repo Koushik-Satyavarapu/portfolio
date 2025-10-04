@@ -6,7 +6,7 @@ import { loadSlim } from "@tsparticles/slim";
 import { particleNasaTheme } from '../utils/utils'
 import Sparkles from '../components/Sparkles'
 import '../styles/home.css'
-import Quby from '../assets/koushik.png'
+import Quby from '../assets/koushik.jpg'
 import SpaceBg from '../components/SpaceBg';
 import { Typewriter } from 'react-simple-typewriter';
 
