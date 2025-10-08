@@ -8,7 +8,7 @@ export default function SocialBar() {
     <div className="social-bar">
       <a href="https://linktr.ee/koushikSatyavarapu" target="_blank" rel="noopener noreferrer"><Linktree /></a>
       <a href="https://github.com/Koushik-Satyavarapu" target="_blank" rel="noopener noreferrer"><Github /></a>
-      <a href="https://www.linkedin.com/in/koushik-satyavarapu-1063332a6?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank" rel="noopener noreferrer"><Linkedin /></a>
+      <a href="https://www.linkedin.com/in/koushiksatyavarapu/" target="_blank" rel="noopener noreferrer"><Linkedin /></a>
       <a href="https://leetcode.com/koushikSatyavarapu" target="_blank" rel="noopener noreferrer"><Leetcode /></a>
     </div>
   );
