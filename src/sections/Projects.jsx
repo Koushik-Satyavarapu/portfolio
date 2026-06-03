@@ -33,7 +33,7 @@ export default function Projects() {
             source="https://github.com/Koushik-Satyavarapu/portfolio.git"
           />
         </ProjectCard>
-        {/* <ProjectCard>
+        <ProjectCard>
           <img src="agriconnect.png" alt="AgriConnect" />
           <Content>
             <h3>AgriConnect</h3>
@@ -50,7 +50,7 @@ export default function Projects() {
             </Tags>
           </Content>
           <CardActions visit="" source="" />
-        </ProjectCard> */}
+        </ProjectCard>
         <ProjectCard>
           <img src="newspulse.png" alt="NewsPulse" />
           <Content>
@@ -71,7 +71,7 @@ export default function Projects() {
           </Content>
           <CardActions
             visit="https://news-pulse-1-liard.vercel.app/"
-            source="https://github.com/Koushik-Satyavarapu/NewsPulse.git"
+            source="https://github.com/Koushik-Satyavarapu/NewsPulse-1"
           />
         </ProjectCard>
         <ProjectCard>
